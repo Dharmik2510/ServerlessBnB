@@ -1,10 +1,6 @@
 import boto3
 from boto3.dynamodb.conditions import Attr, Key
 
-aws_access_key_id = "ASIAY3TBENAPD6MOOUP6"
-aws_secret_access_key = "m88M7YlIn+wHp07U9CcFtC1t6THLFEZXrF9wEXdy"
-aws_session_token = "FwoGZXIvYXdzEFsaDObSfpsyy8i7Nsz7QyLAAW7KtfJtJhb1o5qxyUNkKdA07OUuXKQzxTc2Bp2yE2bJz8GuK5rRkXc5xUnfK0K/zvivg54JezvyUHYzdjcYCFQoWrG6qzSfydfq6H9bsrnOdGEwhluByx9NagG6sXR0pIWwFwwdVH8nYGCygj5hBohOSgkFJZCd8dfYM/yCeBfu8qtyZ3F+IAroae+BLB2hADuR+XiHbX4VjMmxT5PXiwsTPF92i1j2cC25VcSMmosYOzSD/jL238Sj05tvRI62zyiSgPaWBjItY+un3faSq+TGL2M45FlTSCy64OocSWZUwsNR8babG5PTBJkdfAMPjaLfP4/a"
-
 
 def getDynamoDBTable(tableName):
     session = boto3.Session(aws_access_key_id=aws_access_key_id,
